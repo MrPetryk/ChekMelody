@@ -9,3 +9,9 @@ C:\Users\Petryk\source\repos\ChekMeldy\ChekMeldy\obj\Debug\ChekMeldy.csproj.Core
 C:\Users\Petryk\source\repos\ChekMeldy\ChekMeldy\obj\Debug\ChekMeldy.exe
 C:\Users\Petryk\source\repos\ChekMeldy\ChekMeldy\obj\Debug\ChekMeldy.pdb
 C:\Users\Petryk\source\repos\ChekMeldy\ChekMeldy\obj\Debug\ChekMeldy.optionsForm.resources
+C:\Users\Petryk\source\repos\ChekMeldy\ChekMeldy\bin\Debug\Interop.WMPLib.dll
+C:\Users\Petryk\source\repos\ChekMeldy\ChekMeldy\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\Petryk\source\repos\ChekMeldy\ChekMeldy\obj\Debug\Interop.WMPLib.dll
+C:\Users\Petryk\source\repos\ChekMeldy\ChekMeldy\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\Petryk\source\repos\ChekMeldy\ChekMeldy\obj\Debug\ChekMeldy.csproj.ResolveComReference.cache
+C:\Users\Petryk\source\repos\ChekMeldy\ChekMeldy\obj\Debug\ChekMeldy.gameForm.resources

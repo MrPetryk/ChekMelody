@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace ChekMeldy
 {
@@ -14,6 +15,7 @@ namespace ChekMeldy
     {
         public optionsForm()
         {
+
             InitializeComponent();
         }
 
@@ -37,8 +39,9 @@ namespace ChekMeldy
             FolderBrowserDialog fbd = new FolderBrowserDialog();
             if (fbd.ShowDialog() == DialogResult.OK)
             {
-                string[] musicList = System.IO.Directory.GetFiles(fbd.SelectedPath, "*.mp3", checkFlderInside.Checked?System.IO.SearchOption.AllDirectories:System.IO.SearchOption.TopDirectoryOnly);
+                string[] musicList = Directory.GetFiles(fbd.SelectedPath, "*.mp3", checkFlderInside.Checked?SearchOption.AllDirectories:SearchOption.TopDirectoryOnly);
                 songsList.Items.AddRange(musicList);
+                Wiktorina.list.AddRange(musicList);
             }
             
         }
@@ -46,6 +49,7 @@ namespace ChekMeldy
         private void clearListButton_Click(object sender, EventArgs e)
         {
             songsList.Items.Clear();
+            Wiktorina.list.Clear();
         }
     }
 }

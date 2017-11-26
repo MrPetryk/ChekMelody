@@ -43,6 +43,7 @@
             this.playButton.TabIndex = 0;
             this.playButton.Text = "Play";
             this.playButton.UseVisualStyleBackColor = true;
+            this.playButton.Click += new System.EventHandler(this.playButton_Click);
             // 
             // optionsButton
             // 
@@ -74,6 +75,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackgroundImage = global::ChekMeldy.Properties.Resources.maxresdefault;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1184, 562);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.optionsButton);
@@ -82,6 +84,7 @@
             this.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.Name = "mainForm";
             this.Text = "Guess Melody";
+            this.Load += new System.EventHandler(this.mainForm_Load);
             this.ResumeLayout(false);
 
         }
