@@ -37,7 +37,7 @@ namespace ChekMeldy
             FolderBrowserDialog fbd = new FolderBrowserDialog();
             if (fbd.ShowDialog() == DialogResult.OK)
             {
-                string[] musicList = System.IO.Directory.GetFiles(fbd.SelectedPath, "*.mp3");
+                string[] musicList = System.IO.Directory.GetFiles(fbd.SelectedPath, "*.mp3", checkFlderInside.Checked?System.IO.SearchOption.AllDirectories:System.IO.SearchOption.TopDirectoryOnly);
                 songsList.Items.AddRange(musicList);
             }
             
