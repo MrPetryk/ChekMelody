@@ -10,11 +10,24 @@ using System.Windows.Forms;
 
 namespace ChekMeldy
 {
-    public partial class Form1 : Form
+    public partial class mainForm : Form
     {
-        public Form1()
+        public mainForm()
         {
+           
+            this.StartPosition = FormStartPosition.CenterParent;
             InitializeComponent();
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void optionsButton_Click(object sender, EventArgs e)
+        {
+            optionsForm of = new optionsForm();
+            of.ShowDialog();
         }
     }
 }

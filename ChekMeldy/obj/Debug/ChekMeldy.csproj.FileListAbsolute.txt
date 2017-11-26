@@ -1,0 +1,11 @@
+C:\Users\Petryk\source\repos\ChekMeldy\ChekMeldy\bin\Debug\ChekMeldy.exe.config
+C:\Users\Petryk\source\repos\ChekMeldy\ChekMeldy\bin\Debug\ChekMeldy.exe
+C:\Users\Petryk\source\repos\ChekMeldy\ChekMeldy\bin\Debug\ChekMeldy.pdb
+C:\Users\Petryk\source\repos\ChekMeldy\ChekMeldy\obj\Debug\ChekMeldy.csprojResolveAssemblyReference.cache
+C:\Users\Petryk\source\repos\ChekMeldy\ChekMeldy\obj\Debug\ChekMeldy.mainForm.resources
+C:\Users\Petryk\source\repos\ChekMeldy\ChekMeldy\obj\Debug\ChekMeldy.Properties.Resources.resources
+C:\Users\Petryk\source\repos\ChekMeldy\ChekMeldy\obj\Debug\ChekMeldy.csproj.GenerateResource.Cache
+C:\Users\Petryk\source\repos\ChekMeldy\ChekMeldy\obj\Debug\ChekMeldy.csproj.CoreCompileInputs.cache
+C:\Users\Petryk\source\repos\ChekMeldy\ChekMeldy\obj\Debug\ChekMeldy.exe
+C:\Users\Petryk\source\repos\ChekMeldy\ChekMeldy\obj\Debug\ChekMeldy.pdb
+C:\Users\Petryk\source\repos\ChekMeldy\ChekMeldy\obj\Debug\ChekMeldy.optionsForm.resources
