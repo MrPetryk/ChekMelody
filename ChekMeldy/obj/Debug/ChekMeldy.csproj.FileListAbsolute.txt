@@ -8,3 +8,4 @@ C:\Users\Petryk\source\repos\ChekMeldy\ChekMeldy\obj\Debug\ChekMeldy.csproj.Gene
 C:\Users\Petryk\source\repos\ChekMeldy\ChekMeldy\obj\Debug\ChekMeldy.csproj.CoreCompileInputs.cache
 C:\Users\Petryk\source\repos\ChekMeldy\ChekMeldy\obj\Debug\ChekMeldy.exe
 C:\Users\Petryk\source\repos\ChekMeldy\ChekMeldy\obj\Debug\ChekMeldy.pdb
+C:\Users\Petryk\source\repos\ChekMeldy\ChekMeldy\obj\Debug\ChekMeldy.optionsForm.resources

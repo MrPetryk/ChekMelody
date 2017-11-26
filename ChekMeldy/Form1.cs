@@ -14,12 +14,20 @@ namespace ChekMeldy
     {
         public mainForm()
         {
+           
+            this.StartPosition = FormStartPosition.CenterParent;
             InitializeComponent();
         }
 
         private void exitButton_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void optionsButton_Click(object sender, EventArgs e)
+        {
+            optionsForm of = new optionsForm();
+            of.ShowDialog();
         }
     }
 }

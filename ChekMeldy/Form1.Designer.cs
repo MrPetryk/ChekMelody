@@ -54,6 +54,7 @@
             this.optionsButton.TabIndex = 1;
             this.optionsButton.Text = "Options";
             this.optionsButton.UseVisualStyleBackColor = true;
+            this.optionsButton.Click += new System.EventHandler(this.optionsButton_Click);
             // 
             // exitButton
             // 
@@ -71,6 +72,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 34F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackgroundImage = global::ChekMeldy.Properties.Resources.maxresdefault;
             this.ClientSize = new System.Drawing.Size(1184, 562);
             this.Controls.Add(this.exitButton);
