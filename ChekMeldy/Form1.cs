@@ -29,5 +29,17 @@ namespace ChekMeldy
             optionsForm of = new optionsForm();
             of.ShowDialog();
         }
+
+        private void mainForm_Load(object sender, EventArgs e)
+        {
+            Wiktorina.readParameters();
+            Wiktorina.readMusic();
+        }
+
+        private void playButton_Click(object sender, EventArgs e)
+        {
+            gameForm gf = new gameForm();
+            gf.ShowDialog();
+        }
     }
 }

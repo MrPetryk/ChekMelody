@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace ChekMeldy
 {
@@ -14,16 +15,33 @@ namespace ChekMeldy
     {
         public optionsForm()
         {
+
             InitializeComponent();
+        }
+
+        void setParameters()
+        {
+            musicTime.Text = Wiktorina.musicDuration.ToString();
+            answerTime.Text = Wiktorina.gameDuration.ToString();
+            chekPosition.Checked = Wiktorina.randomStart;
+            checkFlderInside.Checked = Wiktorina.allDirectories;
+            songsList.Items.AddRange(Wiktorina.list.ToArray());
+            
         }
 
         private void optionsForm_Load(object sender, EventArgs e)
         {
-
+            Wiktorina.readParameters();
+            setParameters();
         }
 
         private void OKButton_Click(object sender, EventArgs e)
         {
+            Wiktorina.musicDuration = Convert.ToInt32(musicTime.Text);
+            Wiktorina.gameDuration = Convert.ToInt32(answerTime.Text);
+            Wiktorina.randomStart = Convert.ToBoolean(chekPosition.Checked);
+            Wiktorina.allDirectories = Convert.ToBoolean(checkFlderInside.Checked);
+            Wiktorina.writeParameters();
             this.Hide();
         }
 
@@ -37,8 +55,10 @@ namespace ChekMeldy
             FolderBrowserDialog fbd = new FolderBrowserDialog();
             if (fbd.ShowDialog() == DialogResult.OK)
             {
-                string[] musicList = System.IO.Directory.GetFiles(fbd.SelectedPath, "*.mp3", checkFlderInside.Checked?System.IO.SearchOption.AllDirectories:System.IO.SearchOption.TopDirectoryOnly);
+                string[] musicList = Directory.GetFiles(fbd.SelectedPath, "*.mp3", checkFlderInside.Checked?SearchOption.AllDirectories:SearchOption.TopDirectoryOnly);
                 songsList.Items.AddRange(musicList);
+                Wiktorina.list.AddRange(musicList);
+                Wiktorina.lastFolder = fbd.SelectedPath;
             }
             
         }
@@ -46,6 +66,7 @@ namespace ChekMeldy
         private void clearListButton_Click(object sender, EventArgs e)
         {
             songsList.Items.Clear();
+            Wiktorina.list.Clear();
         }
     }
 }
