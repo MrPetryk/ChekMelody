@@ -34,6 +34,10 @@
             this.checkFlderInside = new System.Windows.Forms.CheckBox();
             this.cancelButton = new System.Windows.Forms.Button();
             this.OKButton = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.musicTime = new System.Windows.Forms.ComboBox();
+            this.answerTime = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // songsList
@@ -76,7 +80,7 @@
             // 
             // cancelButton
             // 
-            this.cancelButton.Location = new System.Drawing.Point(559, 358);
+            this.cancelButton.Location = new System.Drawing.Point(589, 425);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(75, 23);
             this.cancelButton.TabIndex = 4;
@@ -86,7 +90,7 @@
             // 
             // OKButton
             // 
-            this.OKButton.Location = new System.Drawing.Point(445, 358);
+            this.OKButton.Location = new System.Drawing.Point(486, 425);
             this.OKButton.Name = "OKButton";
             this.OKButton.Size = new System.Drawing.Size(75, 23);
             this.OKButton.TabIndex = 5;
@@ -94,11 +98,66 @@
             this.OKButton.UseVisualStyleBackColor = true;
             this.OKButton.Click += new System.EventHandler(this.OKButton_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(9, 320);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(61, 13);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Music Time";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(9, 346);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(86, 13);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Tome for answer";
+            // 
+            // musicTime
+            // 
+            this.musicTime.FormattingEnabled = true;
+            this.musicTime.Items.AddRange(new object[] {
+            "10",
+            "15",
+            "20",
+            "25",
+            "30",
+            "35",
+            "40"});
+            this.musicTime.Location = new System.Drawing.Point(114, 317);
+            this.musicTime.Name = "musicTime";
+            this.musicTime.Size = new System.Drawing.Size(97, 21);
+            this.musicTime.TabIndex = 8;
+            this.musicTime.Text = "10";
+            // 
+            // answerTime
+            // 
+            this.answerTime.FormattingEnabled = true;
+            this.answerTime.Items.AddRange(new object[] {
+            "10",
+            "15",
+            "20",
+            "25",
+            "30",
+            "35"});
+            this.answerTime.Location = new System.Drawing.Point(114, 343);
+            this.answerTime.Name = "answerTime";
+            this.answerTime.Size = new System.Drawing.Size(97, 21);
+            this.answerTime.TabIndex = 9;
+            this.answerTime.Text = "10";
+            // 
             // optionsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(646, 393);
+            this.ClientSize = new System.Drawing.Size(676, 460);
+            this.Controls.Add(this.answerTime);
+            this.Controls.Add(this.musicTime);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.OKButton);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.checkFlderInside);
@@ -121,5 +180,9 @@
         private System.Windows.Forms.CheckBox checkFlderInside;
         private System.Windows.Forms.Button cancelButton;
         private System.Windows.Forms.Button OKButton;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox musicTime;
+        private System.Windows.Forms.ComboBox answerTime;
     }
 }

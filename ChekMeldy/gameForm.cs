@@ -19,8 +19,8 @@ namespace ChekMeldy
 
         private void nextButton_Click(object sender, EventArgs e)
         {
-            Wiktorina.i++;
-            WMP.URL = Wiktorina.list[Wiktorina.i];
+            Wiktorina.I++;
+            WMP.URL = Wiktorina.list[Wiktorina.I];
         }
     }
 }

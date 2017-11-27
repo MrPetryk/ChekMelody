@@ -26,6 +26,7 @@ namespace ChekMeldy
 
         private void OKButton_Click(object sender, EventArgs e)
         {
+            Wiktorina.writeParameters();
             this.Hide();
         }
 
@@ -42,6 +43,7 @@ namespace ChekMeldy
                 string[] musicList = Directory.GetFiles(fbd.SelectedPath, "*.mp3", checkFlderInside.Checked?SearchOption.AllDirectories:SearchOption.TopDirectoryOnly);
                 songsList.Items.AddRange(musicList);
                 Wiktorina.list.AddRange(musicList);
+                Wiktorina.lastFolder = fbd.SelectedPath;
             }
             
         }
