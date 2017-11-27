@@ -19,13 +19,28 @@ namespace ChekMeldy
             InitializeComponent();
         }
 
+        void setParameters()
+        {
+            musicTime.Text = Wiktorina.musicDuration.ToString();
+            answerTime.Text = Wiktorina.gameDuration.ToString();
+            chekPosition.Checked = Wiktorina.randomStart;
+            checkFlderInside.Checked = Wiktorina.allDirectories;
+            songsList.Items.AddRange(Wiktorina.list.ToArray());
+            
+        }
+
         private void optionsForm_Load(object sender, EventArgs e)
         {
-
+            Wiktorina.readParameters();
+            setParameters();
         }
 
         private void OKButton_Click(object sender, EventArgs e)
         {
+            Wiktorina.musicDuration = Convert.ToInt32(musicTime.Text);
+            Wiktorina.gameDuration = Convert.ToInt32(answerTime.Text);
+            Wiktorina.randomStart = Convert.ToBoolean(chekPosition.Checked);
+            Wiktorina.allDirectories = Convert.ToBoolean(checkFlderInside.Checked);
             Wiktorina.writeParameters();
             this.Hide();
         }

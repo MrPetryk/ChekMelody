@@ -38,6 +38,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.musicTime = new System.Windows.Forms.ComboBox();
             this.answerTime = new System.Windows.Forms.ComboBox();
+            this.chekPosition = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // songsList
@@ -149,11 +150,22 @@
             this.answerTime.TabIndex = 9;
             this.answerTime.Text = "10";
             // 
+            // chekPosition
+            // 
+            this.chekPosition.AutoSize = true;
+            this.chekPosition.Location = new System.Drawing.Point(12, 396);
+            this.chekPosition.Name = "chekPosition";
+            this.chekPosition.Size = new System.Drawing.Size(105, 17);
+            this.chekPosition.TabIndex = 10;
+            this.chekPosition.Text = "Random position";
+            this.chekPosition.UseVisualStyleBackColor = true;
+            // 
             // optionsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(676, 460);
+            this.Controls.Add(this.chekPosition);
             this.Controls.Add(this.answerTime);
             this.Controls.Add(this.musicTime);
             this.Controls.Add(this.label2);
@@ -184,5 +196,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox musicTime;
         private System.Windows.Forms.ComboBox answerTime;
+        private System.Windows.Forms.CheckBox chekPosition;
     }
 }
